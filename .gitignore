@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/.vs
+/src/FinalProjectLibrary/bin/Debug/net6.0
+/src/FinalProjectLibrary/Migrations
+/src/FinalProjectLibrary/obj/Debug/net6.0
+/src/FinalProjectLibrary/obj
+/src/RawDataManager/bin/Debug/net6.0
+/src/RawDataManager/obj
+/src/UnitTest/bin/Debug/net6.0
+/src/UnitTest/obj
