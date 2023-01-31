@@ -1,0 +1,40 @@
+# Telling what image the docker used by the CI will use. .NET Core SDK used to access dotnet commands
+image: mcr.microsoft.com/dotnet/sdk:6.0
+
+stages:
+  - build
+  - unit_testing
+  - pipelineRunned
+
+buildSensadeLibrary:
+  stage: build
+  script:
+    - cd src/SensadeLibrary
+    - dotnet build
+  only: 
+      # Only run if there is changes at: 
+      changes:
+      - src/SensadeLibrary/**/*
+      # Only run if commit is into the protected branches (Main and Development)
+      variables:
+      - ($CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "development")
+      
+ 
+buildRawDataManager:
+  stage: build
+  script:
+    - cd src/RawDataManager
+    - dotnet build
+  only:
+      changes:
+      - src/SensadeLibrary/**/*
+      - src/RawDataManager/**/*
+      variables:
+      - ($CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "development")
+
+# Unit test is always runned
+test:
+  stage: unit_testing
+  script:
+    - cd src/UnitTest
+    - dotnet test

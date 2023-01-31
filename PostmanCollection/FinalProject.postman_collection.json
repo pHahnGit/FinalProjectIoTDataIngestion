@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "82def84b-3aeb-4ffc-9bb7-c564b2aba9db",
+		"name": "FinalProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NewMeasurement",
+			"item": [
+				{
+					"name": "SilkeborgAPI",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"ParkeringspladserCoil\",\r\n    \"measurements\": [\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Banegård - vest\",\r\n                \"longitude\": \"9.542103786283377\",\r\n                \"latitude\": \"56.16421440019126\",\r\n                \"parkingcapacity\": 62,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Bindslevs Plads, p-kælder + nord + kantsten\",\r\n                \"longitude\": \"9.54802474290604\",\r\n                \"latitude\": \"56.16620493532808\",\r\n                \"parkingcapacity\": 216,\r\n                \"parkingfree\": 10\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Bios Gård\",\r\n                \"longitude\": \"9.5460672535546\",\r\n                \"latitude\": \"56.16758780307408\",\r\n                \"parkingcapacity\": 114,\r\n                \"parkingfree\": 7\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Estrups Gård\",\r\n                \"longitude\": \"9.543318507661457\",\r\n                \"latitude\": \"56.16532997872286\",\r\n                \"parkingcapacity\": 151,\r\n                \"parkingfree\": 173\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Jyske Banks parkering\",\r\n                \"longitude\": \"9.544880005769299\",\r\n                \"latitude\": \"56.16906103336498\",\r\n                \"parkingcapacity\": 700,\r\n                \"parkingfree\": 630\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Kornmods Gård\",\r\n                \"longitude\": \"9.542492713961307\",\r\n                \"latitude\": \"56.16692168906478\",\r\n                \"parkingcapacity\": 107,\r\n                \"parkingfree\": 77\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Mejerigården\",\r\n                \"longitude\": \"9.548572156271362\",\r\n                \"latitude\": \"56.168095306548814\",\r\n                \"parkingcapacity\": 32,\r\n                \"parkingfree\": 5\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Rådhus - øst\",\r\n                \"longitude\": \"9.55186130195464\",\r\n                \"latitude\": \"56.17158992205811\",\r\n                \"parkingcapacity\": 83,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Rådhus - vest\",\r\n                \"longitude\": \"9.548263426697968\",\r\n                \"latitude\": \"56.170536028489416\",\r\n                \"parkingcapacity\": 229,\r\n                \"parkingfree\": 12\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Søgade\",\r\n                \"longitude\": \"9.545859445476617\",\r\n                \"latitude\": \"56.16982217157348\",\r\n                \"parkingcapacity\": 107,\r\n                \"parkingfree\": 84\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Torvet, p-kælder\",\r\n                \"longitude\": \"9.549705394544905\",\r\n                \"latitude\": \"56.16945073716191\",\r\n                \"parkingcapacity\": 226,\r\n                \"parkingfree\": 124\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Torvecenteret\",\r\n                \"longitude\": \"9.55172748521035\",\r\n                \"latitude\": \"56.16920009115607\",\r\n                \"parkingcapacity\": 400,\r\n                \"parkingfree\": 256\r\n            }\r\n        }\r\n    ],\r\n    \"totalMeasurements\": 12,\r\n    \"timeStamp\": \"2023-01-06T10:04:18.394Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44339/api/raw/newmeasurement",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44339",
+							"path": [
+								"api",
+								"raw",
+								"newmeasurement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SilkeborgAPI Reset",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"ParkeringspladserCoil\",\r\n    \"measurements\": [\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Banegård - vest\",\r\n                \"longitude\": \"9.542103786283377\",\r\n                \"latitude\": \"56.16421440019126\",\r\n                \"parkingcapacity\": 62,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Bindslevs Plads, p-kælder + nord + kantsten\",\r\n                \"longitude\": \"9.54802474290604\",\r\n                \"latitude\": \"56.16620493532808\",\r\n                \"parkingcapacity\": 216,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Bios Gård\",\r\n                \"longitude\": \"9.5460672535546\",\r\n                \"latitude\": \"56.16758780307408\",\r\n                \"parkingcapacity\": 114,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Estrups Gård\",\r\n                \"longitude\": \"9.543318507661457\",\r\n                \"latitude\": \"56.16532997872286\",\r\n                \"parkingcapacity\": 151,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Jyske Banks parkering\",\r\n                \"longitude\": \"9.544880005769299\",\r\n                \"latitude\": \"56.16906103336498\",\r\n                \"parkingcapacity\": 700,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Kornmods Gård\",\r\n                \"longitude\": \"9.542492713961307\",\r\n                \"latitude\": \"56.16692168906478\",\r\n                \"parkingcapacity\": 107,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Mejerigården\",\r\n                \"longitude\": \"9.548572156271362\",\r\n                \"latitude\": \"56.168095306548814\",\r\n                \"parkingcapacity\": 32,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Rådhus - øst\",\r\n                \"longitude\": \"9.55186130195464\",\r\n                \"latitude\": \"56.17158992205811\",\r\n                \"parkingcapacity\": 83,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Rådhus - vest\",\r\n                \"longitude\": \"9.548263426697968\",\r\n                \"latitude\": \"56.170536028489416\",\r\n                \"parkingcapacity\": 229,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Søgade\",\r\n                \"longitude\": \"9.545859445476617\",\r\n                \"latitude\": \"56.16982217157348\",\r\n                \"parkingcapacity\": 107,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Torvet, p-kælder\",\r\n                \"longitude\": \"9.549705394544905\",\r\n                \"latitude\": \"56.16945073716191\",\r\n                \"parkingcapacity\": 226,\r\n                \"parkingfree\": 0\r\n            }\r\n        },\r\n        {\r\n            \"type\": \"CoilMeasurement\",\r\n            \"properties\": {\r\n                \"name\": \"Torvecenteret\",\r\n                \"longitude\": \"9.55172748521035\",\r\n                \"latitude\": \"56.16920009115607\",\r\n                \"parkingcapacity\": 400,\r\n                \"parkingfree\": 0\r\n            }\r\n        }\r\n    ],\r\n    \"totalMeasurements\": 12,\r\n    \"timeStamp\": \"2023-01-06T10:04:18.394Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44339/api/raw/newmeasurement",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44339",
+							"path": [
+								"api",
+								"raw",
+								"newmeasurement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C02Sensor",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\t\t\t\"probe_id\": \"c02sensor\",\r\n\r\n\t\t\t\"probe_type\": 26,\r\n\r\n\t\t\t\"status\": [1],\r\n\r\n\t\t\t\"value\": 1050\r\n\r\n\t\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44339/api/raw/newmeasurement",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44339",
+							"path": [
+								"api",
+								"raw",
+								"newmeasurement"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
