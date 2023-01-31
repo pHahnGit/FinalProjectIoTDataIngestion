@@ -8,7 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["/src/RawDataManager/", "/src/RawDataManager"]
-COPY ["/src/SensadeLibrary/", "/src/SensadeLibrary"]
+COPY ["/src/FinalProjectLibrary/", "/src/FinalProjectLibrary"]
 RUN dotnet restore "RawDataManager/RawDataManager.csproj"
 #COPY . .
 WORKDIR "/src/RawDataManager/"
